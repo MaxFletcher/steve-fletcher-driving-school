@@ -49,7 +49,6 @@ h1 {
 .navbar {
   overflow: hidden;
   background-color: #097530;
-  padding: 0 2rem;
 }
 
 .navbar a {
