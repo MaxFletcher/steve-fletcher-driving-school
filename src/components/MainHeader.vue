@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
+import imgFbLogoUrl from '@/assets/images/f_logo_RGB-Blue_58.png';
 
 const toggled = ref(false);
 const navbarClasses = computed(() => toggled.value ? 'responsive' : '');
@@ -11,7 +12,18 @@ const route = useRoute();
 
 <template>
   <header>
-    <h1>Steve Fletcher Driving School</h1>
+    <div class="header-container">
+      <div>
+        <h1>Steve Fletcher Driving School</h1>
+        <div class="contact-details">
+          <a href="mailto:aastevefletcher@hotmail.com">aastevefletcher@hotmail.com</a>
+          <a href="tel:07887403480">07887403480</a>
+        </div>
+      </div>
+      <div class="header-end">
+        <a class="social-link" href="https://www.facebook.com/stevefletcherdrivingschool" target="_blank" rel="noopener noreferrer"><img class="fb-link" :src="imgFbLogoUrl" /></a>
+      </div>
+    </div>
 
     <nav class="navbar" :class="navbarClasses">
       <RouterLink to="/">Home</RouterLink>
@@ -33,6 +45,12 @@ header {
   background-color: lightgreen;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
 li {
   list-style: none;
 }
@@ -42,7 +60,7 @@ a {
 }
 
 h1 {
-  padding: 1rem 2rem;
+  padding: 0.25rem 2rem;
   color: darkgreen;
 }
 
@@ -73,6 +91,37 @@ h1 {
 
 .navbar .icon {
   display: none;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.contact-details a {
+  color: #06402a;
+  text-decoration: underline;
+  background: none;
+}
+
+.contact-details a:hover {
+  color: #47a782;
+}
+
+.header-end {
+  display: flex;
+  padding-right: 2rem;
+}
+
+.social-link {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.fb-link {
+  width: 42px;
+  height: 42px;
 }
 
 @media screen and (max-width: 600px) {

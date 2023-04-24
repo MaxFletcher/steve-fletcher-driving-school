@@ -2,11 +2,13 @@
   {
     "price": "42.00",
     "name": "1 Hour lesson",
-    "description": "Ideal as a first \"taster\" and assessment lesson and a chance to meet your instructor, who will be able to advise you on your best course of action."
+    "description": "Ideal as a first \"taster\" and assessment lesson and a chance to meet your instructor, who will be able to advise you on your best course of action.",
+    "image": "images/clock_1hr.png"
   },
   {
     "price": "80.00",
     "name": "2 Hour lesson",
-    "description": "Booking a 2 hour lesson will save you money and speed up your progress. Two hour lessons cost less and are far more productive because of the continuous unbroken time behind the wheel."
+    "description": "Booking a 2 hour lesson will save you money and speed up your progress. Two hour lessons cost less and are far more productive because of the continuous unbroken time behind the wheel.",
+    "image": "images/clock_2hr.png"
   }
 ]
