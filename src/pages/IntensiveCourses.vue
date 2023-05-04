@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import priceValues from '@/assets/prices.json'
+import priceValues from '@/assets/intensive-prices.json'
 import imgCardsUrl from '@/assets/images/cards.jpg'
 </script>
 
@@ -7,7 +7,6 @@ import imgCardsUrl from '@/assets/images/cards.jpg'
   <main>
 
     <article v-for="priceValue in priceValues" :key="priceValue.name" class="price-article">
-      <img class="price-image" :src="priceValue.image" />
       <div class="price-text-container">
         <p class="price-name">{{ priceValue.name }}</p>
         <p class="price-description">{{ priceValue.description }}</p>

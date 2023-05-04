@@ -1,0 +1,38 @@
+[
+  {
+    "price": "599.00",
+    "name": "12 Hours 3 Days",
+    "description": "Ideal for someone who is very close to test standard or recently failed a test. The main bulk of the course is on the first two days with the driving test being taken on the morning of the third. This course can also be taken over the weekend.",
+    "image": null
+  },
+  {
+    "price": "870.00",
+    "name": "18 Hours 4 Days",
+    "description": "Ideal for someone who has already attained a good standard of driving, but needs that extra bit of help and guidance to reach test standard.",
+    "image": null
+  },
+  {
+    "price": "1185.00",
+    "name": "25 Hours 5 Days",
+    "description": "This is our most popular course. Ideal for pupils with some driving experience and has already mastered the basic controls. The course can start on any day of the week.",
+    "image": null
+  },
+  {
+    "price": "1410.00",
+    "name": "30 Hours 6 Days",
+    "description": "Suitable for the confident young novice or older pupil that has had some past driving tuition.",
+    "image": null
+  },
+  {
+    "price": "1635.00",
+    "name": "35 Hours 7 Days",
+    "description": "This course is ideal for the young beginner and the older novice that has already mastered the basic controls.",
+    "image": null
+  },
+  {
+    "price": "1860.00",
+    "name": "40 Hours 8 Days",
+    "description": "Suitable for the more nervous beginner or older novice. This course will really boost your confidence and get you on the road to success.",
+    "image": null
+  }
+]

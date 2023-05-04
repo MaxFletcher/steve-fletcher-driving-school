@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import priceValues from '@/assets/prices.json'
+import priceValues from '@/assets/prices.json';
+import intensivePriceValues from '@/assets/intensive-prices.json';
 
 </script>
 
@@ -61,7 +62,15 @@ import priceValues from '@/assets/prices.json'
 
       <ul>
         <li v-for="priceValue in priceValues" :key="priceValue.name">
-          {{ priceValue.name }} - £{{ priceValue.price }}
+          <RouterLink to="/prices">{{ priceValue.name }} - £{{ priceValue.price }}</RouterLink>
+        </li>
+      </ul>
+
+      <hr class="my-2" />
+
+      <ul>
+        <li v-for="priceValue in intensivePriceValues" :key="priceValue.name">
+          <RouterLink to="/intensivecourses">{{ priceValue.name }} - £{{ priceValue.price }}</RouterLink>
         </li>
       </ul>
     </article>

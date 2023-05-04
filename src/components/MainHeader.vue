@@ -21,17 +21,19 @@ const route = useRoute();
         </div>
       </div>
       <div class="header-end">
-        <a class="social-link" href="https://www.facebook.com/stevefletcherdrivingschool" target="_blank" rel="noopener noreferrer"><img class="fb-link" :src="imgFbLogoUrl" /></a>
+        <a class="social-link" href="https://www.facebook.com/stevefletcherdrivingschool" target="_blank"
+          rel="noopener noreferrer"><img class="fb-link" :src="imgFbLogoUrl" /></a>
       </div>
     </div>
 
     <nav class="navbar" :class="navbarClasses">
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/prices">Prices</RouterLink>
+      <RouterLink to="/prices">Hourly Prices</RouterLink>
+      <RouterLink to="/intensivecourses">Intensive Course Prices</RouterLink>
       <RouterLink to="/reviews">Reviews</RouterLink>
       <RouterLink to="/contact">Contact Us</RouterLink>
       <RouterLink to="/terms">Terms and conditions</RouterLink>
-      <a class="icon" @click="$event => toggled = !toggled">
+      <a class="icon" @click="toggled = !toggled">
         &#9776;
       </a>
     </nav>
